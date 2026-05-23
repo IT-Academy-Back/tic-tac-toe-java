@@ -43,7 +43,29 @@ cd frontend
 pnpm build
 ```
 
-## Endpoint principal
+## Endpoints
+
+### Start game
+
+```http
+POST /game/start
+```
+
+Response esperada:
+
+```json
+{
+  "board": [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0]
+  ],
+  "status": "IN_PROGRESS",
+  "message": "Game started"
+}
+```
+
+### Play move
 
 ```http
 POST /game/play
