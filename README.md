@@ -94,6 +94,8 @@ Response esperada:
 }
 ```
 
+La jugada del jugador es marca amb `1`. Si la partida continua, el backend tambe fa una tirada random de la maquina amb `2`.
+
 ## Notes per a l'alumnat
 
 El projecte base ja defineix el contracte de la request. La teva feina principal sera implementar la logica del joc al backend:

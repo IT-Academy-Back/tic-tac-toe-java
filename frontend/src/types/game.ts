@@ -1,12 +1,5 @@
 export type CellValue = 0 | 1 | 2
 export type Board = CellValue[][]
-export type GameStatus =
-  | 'IN_PROGRESS'
-  | 'PLAYER_WON'
-  | 'MACHINE_WON'
-  | 'DRAW'
-  | 'INVALID_MOVE'
-
 export type MoveRequest = {
   row: number
   col: number
@@ -14,7 +7,7 @@ export type MoveRequest = {
 
 export type GameState = {
   board: Board
-  status: GameStatus
+  status: string
   message: string
 }
 

@@ -1,7 +1,5 @@
-import type { GameStatus } from '../types/game'
-
 type IntroPanelProps = {
-  status: GameStatus
+  status: string
   message: string
   onReset: () => void
 }
@@ -12,8 +10,8 @@ export function IntroPanel({ status, message, onReset }: IntroPanelProps) {
       <p className="eyebrow">Sprint 0 · Backend logic</p>
       <h1 id="game-title">Tic-Tac-Toe</h1>
       <p className="intro-copy">
-        A charcoal sketch board for testing the game flow before connecting the
-        Spring Boot API.
+        Play against the machine and follow each backend decision from the
+        console.
       </p>
       <div className="status-card">
         <span>{status.replace('_', ' ')}</span>
