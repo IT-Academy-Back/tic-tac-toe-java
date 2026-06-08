@@ -36,6 +36,16 @@ pnpm install
 pnpm dev
 ```
 
+També pots aixecar el frontend amb Docker Compose des de l'arrel del repositori:
+
+```bash
+docker compose up frontend
+```
+
+El frontend quedarà disponible a `http://localhost:5173`.
+
+Si vols que el frontend connecti amb el backend, aixeca abans l'API Spring Boot a `http://localhost:8080`.
+
 Per generar una build del frontend:
 
 ```bash
