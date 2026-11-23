@@ -14,7 +14,32 @@ El repositori esta organitzat com un workspace amb dues parts separades:
 - Node.js.
 - pnpm.
 
-## Executar el backend
+## Executar el frontend
+
+Pots executar el frontend amb pnpm des de la línia de comandes:
+
+```bash
+cd frontend
+pnpm install
+pnpm dev
+```
+El frontend ha d'estar disponible a:
+```bash
+http://localhost:5173
+```
+
+## Com executar el backend
+
+1. Obre la carpeta `backend` amb IntelliJ IDEA.
+2. Comprova que el projecte utilitza **Java 21**.
+3. Executa la classe principal del projecte.
+4. El backend ha d'estar disponible a:
+
+```bash
+http://localhost:8080
+```
+
+També pots executar el backend amb Maven Wrapper des de la línia de comandes:
 
 ```bash
 cd backend
@@ -26,31 +51,6 @@ Per executar els tests del backend:
 ```bash
 cd backend
 ./mvnw test
-```
-
-## Executar el frontend
-
-```bash
-cd frontend
-pnpm install
-pnpm dev
-```
-
-També pots aixecar el frontend amb Docker Compose des de l'arrel del repositori:
-
-```bash
-docker compose up frontend
-```
-
-El frontend quedarà disponible a `http://localhost:5173`.
-
-Si vols que el frontend connecti amb el backend, aixeca abans l'API Spring Boot a `http://localhost:8080`.
-
-Per generar una build del frontend:
-
-```bash
-cd frontend
-pnpm build
 ```
 
 ## Endpoints
