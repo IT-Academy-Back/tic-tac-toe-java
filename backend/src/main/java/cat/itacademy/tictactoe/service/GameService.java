@@ -89,19 +89,12 @@ public class GameService {
     }
 
     // TODO: Descriu que fa aquest mètode, quin tipus de dada retorna,
-    //  quin valor i de què depèn.
     private boolean isValidMove(MoveRequest moveRequest) {
-
-        if (isInsideBoard(moveRequest.getRow(), moveRequest.getCol())
-                && board[moveRequest.getRow()][moveRequest.getCol()] == EMPTY) {
-            return true;
-        }
 
 		return false;
     }
 
     // TODO: Descriu que fa aquest mètode, quin tipus de dada retorna,
-    //  quin valor i de què depèn.
     private boolean isInsideBoard(int row, int col) {
         return row >= 0 && row <= 2 && col >= 0 && col <= 2;
     }
