@@ -106,13 +106,11 @@ Response esperada:
 
 La jugada del jugador es marca amb `1`. Si la partida continua, el backend tambe fa una tirada random de la maquina amb `2`.
 
-## Notes per a l'alumnat
+## Què has de fer?
 
-El projecte base ja defineix el contracte de la request. La teva feina principal sera implementar la logica del joc al backend:
+L'aplicació ja està implementada. La teva tasca és entendre com funciona el codi i corregir un bug que impedeix que el jugador pugui fer una tirada.
 
-- validar la jugada del jugador,
-- actualitzar el tauler,
-- fer la tirada random de la maquina,
-- detectar victoria,
-- detectar empat,
-- retornar un estat coherent.
+1. Revisa el codi i descriu què fa cada part de l'aplicació i com es relaciona amb les altres.
+2. Explica el flux d'una partida: l'inici del joc, la validació de la jugada del jugador, l'actualització del tauler, la tirada aleatòria de la màquina i la detecció de victòria o empat.
+3. Reprodueix el bug que impedeix al jugador fer una tirada, localitza'n la causa i explica-la.
+4. Corregeix el bug i comprova que el jugador pot fer una tirada i que la partida continua correctament.
